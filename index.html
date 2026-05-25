@@ -1,13 +1,80 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>agrovision</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVision - Home</title>
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="src/assets/logo.gs.jpeg" alt="AgroVision Logo" class="logo-area">
+                <span>AgroVision</span>
+            </div>
+            <button class="hamburger-btn" aria-label="Abrir Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="monitoramento.html" class="nav-link">Monitoramento</a>
+                <a href="alertas.html" class="nav-link">Alertas</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+                <a href="integrantes.html" class="nav-link">Equipe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" style="background: linear-gradient(rgba(13,71,161,0.6), rgba(0,0,0,0.7)), url('src/assets/banner-home.jpg') no-repeat center center/cover; padding: 100px 20px; text-align: center; color: white;">
+            <h1 style="font-size: 3rem; margin-bottom: 20px;">AgroVision</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 30px; font-weight: 300;">A tecnologia orbital impulsionando a agricultura sustentável na Terra.</p>
+            <a href="sobre.html" class="btn-main" style="background-color: var(--primary-color); color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold;">Conheça a solução</a>
+        </section>
+
+        <section class="cards-section" style="padding: 60px 5%; max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 40px; color: var(--secondary-color);">Nossas Soluções Corporativas</h2>
+            <div class="grid-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <div class="card-item" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center;">
+                    <h3>Monitoramento Climático</h3>
+                    <p style="margin-top: 15px; color: #555;">Previsões de altíssima precisão baseadas em telemetria orbital contínua.</p>
+                </div>
+                <div class="card-item" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center;">
+                    <h3>Irrigação Inteligente</h3>
+                    <p style="margin-top: 15px; color: #555;">Análise do índice de estresse hídrico do solo diretamente do espaço para evitar desperdícios.</p>
+                </div>
+                <div class="card-item" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center;">
+                    <h3>Alertas Ambientais</h3>
+                    <p style="margin-top: 15px; color: #555;">Notificações imediatas sobre riscos iminentes de geadas, secas ou queimadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-section" style="background-color: white; padding: 60px 5%;">
+            <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="color: var(--secondary-color); margin-bottom: 20px;">Inteligência Artificial e Análise Agrícola</h2>
+                    <p style="color: #555; margin-bottom: 15px;">Combinamos o poder de processamento de Big Data com algoritmos avançados de IA para analisar constelações de imagens de satélite LEO.</p>
+                    <p style="color: #555;">Nosso ecossistema conta também com um Chatbot integrado capaz de sugerir correções de manejo de solo em tempo real para os produtores parceiros.</p>
+                </div>
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                    <img src="src/assets/tecnologia.jpg" alt="IA AgroVision" style="max-width: 100%; border-radius: 8px; box-shadow: 0 6px 12px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p> 2026 AgroVision - Economia Espacial aplicada ao Campo. Global Solution FIAP.</p>
+    </footer>
+
+    <script src="src/js/menu.js"></script>
+</body>
 </html>
