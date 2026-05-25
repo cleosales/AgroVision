@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVision - Contato</title>
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <style>
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input, .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 1rem; }
+        .error-message { color: var(--error-color); font-size: 0.85rem; margin-top: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="src/assets/logo.gs.jpeg" alt="AgroVision" class="logo-img">
+                <span>AgroVision</span>
+            </div>
+            <button class="hamburger-btn" aria-label="Abrir Menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="monitoramento.html" class="nav-link">Monitoramento</a>
+                <a href="alertas.html" class="nav-link">Alertas</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contato.html" class="nav-link active">Contato</a>
+                <a href="integrantes.html" class="nav-link">Equipe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 40px 5%; max-width: 600px; margin: 0 auto;">
+        <h1 style="color: var(--secondary-color); margin-bottom: 30px; text-align: center;">Fale Conosco</h1>
+        
+        <form id="form-contato" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);" novalidate>
+            <div class="form-group">
+                <label for="input-nome">Nome Completo</label>
+                <input type="text" id="input-nome" placeholder="Digite seu nome">
+                <div class="error-message" id="error-nome"></div>
+            </div>
+            <div class="form-group">
+                <label for="input-email">E-mail Corporativo</label>
+                <input type="email" id="input-email" placeholder="nome@empresa.com">
+                <div class="error-message" id="error-email"></div>
+            </div>
+            <div class="form-group">
+                <label for="textarea-mensagem">Mensagem</label>
+                <textarea id="textarea-mensagem" rows="5" placeholder="Como a AgroVision pode te ajudar?"></textarea>
+                <div class="error-message" id="error-mensagem"></div>
+            </div>
+            <button type="submit" style="background-color: var(--primary-color); color: white; border: none; padding: 12px 20px; font-size: 1rem; border-radius: 4px; cursor: pointer; width: 100%; font-weight: bold;">Enviar Solicitação</button>
+        </form>
+    </main>
+
+    </main>
+
+<footer class="main-footer">
+    <p>&copy; 2026 AgroVision</p>
+</footer>
+
+<script src="src/js/menu.js"></script>
+<script src="src/js/validacao.js"></script>
+</body>
+</html>
