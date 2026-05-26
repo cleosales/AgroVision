@@ -109,3 +109,9 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.logo-img {
+    height: 50px !important;
+    width: auto !important;
+    object-fit: contain;
+}
