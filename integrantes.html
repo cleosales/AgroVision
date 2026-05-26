@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVision - Integrantes</title>
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="src/assets/logo.gs.jpeg" alt="AgroVision" class="logo-img">
+                <span>AgroVision</span>
+            </div>
+            <button class="hamburger-btn" aria-label="Abrir Menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="monitoramento.html" class="nav-link">Monitoramento</a>
+                <a href="alertas.html" class="nav-link">Alertas</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+                <a href="integrantes.html" class="nav-link active">Equipe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 40px 5%; max-width: 1200px; margin: 0 auto;">
+        <h1 style="color: var(--secondary-color); margin-bottom: 30px; text-align: center;">Integrantes do Grupo</h1>
+        
+        <section class="grid-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; justify-content: center;">
+            <div class="member-card" style="background: white; border-radius: 8px; padding: 25px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                <img src="src/assets/integrante1.jpg" alt="Foto Cléo Sales" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid var(--secondary-color); margin-bottom: 15px;">
+                <h3 style="font-size: 1.3rem;">Cléo Sales</h3>
+                <p style="color: #666; margin: 5px 0;"><strong>RM:</strong> 561298</p>
+                <p style="color: #666; margin-bottom: 15px;"><strong>Turma:</strong> 1TDSPI</p>
+                <div style="display: flex; justify-content: center; gap: 15px;">
+                    <a href="https://github.com/cleosales" target="_blank" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">GitHub</a>
+                    <a href="https://www.linkedin.com/in/cléo-sales-b80930411?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" style="color: var(--accent-color); font-weight: bold; text-decoration: none;">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer"><p>&copy; 2026 AgroVision</p></footer>
+    <script src="src/js/menu.js"></script>
+</body>
+</html>
