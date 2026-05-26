@@ -115,3 +115,9 @@ code {
     width: auto !important;
     object-fit: contain;
 }
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
