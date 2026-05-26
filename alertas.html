@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVision - Alertas Críticos</title>
+    <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    <style>
+        .alert-box { display: flex; align-items: center; justify-content: space-between; padding: 20px; border-radius: 8px; margin-bottom: 20px; color: white; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .bg-seca { background-color: #EF6C00; }
+        .bg-chuva { background-color: #1565C0; }
+        .bg-extremo { background-color: #C62828; }
+        .pulse-light { width: 15px; height: 15px; background: white; border-radius: 50%; animation: pulse 1.5s infinite; }
+        @keyframes pulse { 0% { transform: scale(0.9); opacity: 1; } 50% { transform: scale(1.3); opacity: 0.4; } 100% { transform: scale(0.9); opacity: 1; } }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="src/assets/logo.gs.jpeg" alt="AgroVision" class="logo-img">
+                <span>AgroVision</span>
+            </div>
+            <button class="hamburger-btn" aria-label="Abrir Menu">
+                <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+            </button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="monitoramento.html" class="nav-link">Monitoramento</a>
+                <a href="alertas.html" class="nav-link active">Alertas</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+                <a href="integrantes.html" class="nav-link">Equipe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 40px 5%; max-width: 1000px; margin: 0 auto;">
+        <h1 style="color: var(--secondary-color); margin-bottom: 10px;">Alertas Ambientais</h1>
+        <p style="color: #666; margin-bottom: 30px;">Notificações e anomalias térmicas de alta prioridade geradas dinamicamente via geofencing satelital.</p>
+
+        <section class="alerts-feed">
+            <div class="alert-box bg-seca">
+                <div>
+                    <h3>Alerta Urgente de Seca Severa</h3>
+                    <p>Setor Sul-Sudeste apresentando umidade crítica foliar abaixo de 12% nas últimas 48 horas.</p>
+                </div>
+                <div class="pulse-light"></div>
+            </div>
+
+            <div class="alert-box bg-chuva">
+                <div>
+                    <h3>Risco Alto de Chuva de Granizo</h3>
+                    <p>Instabilidade severa de nuvens cúmulos-nimbos detectada em aproximação orbital de órbita baixa.</p>
+                </div>
+                <div class="pulse-light"></div>
+            </div>
+
+            <div class="alert-box bg-extremo">
+                <div>
+                    <h3>Temperatura Extrema Registrada</h3>
+                    <p>Onda de calor anômala excedendo 41°C no quadrante Noroeste. Ativar sistemas de pivô central.</p>
+                </div>
+                <div class="pulse-light"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer"><p>&copy; 2026 AgroVision</p></footer>
+    <script src="src/js/menu.js"></script>
+</body>
+</html>
