@@ -128,3 +128,10 @@ code {
     align-items: center;
     padding: 10px 5%;
 }
+
+.logo-img {
+    transition: transform 0.3s ease;
+}
+.logo-img:hover {
+    transform: scale(1.05);
+}
