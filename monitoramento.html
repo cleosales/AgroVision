@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroVision - Monitoramento Orbital</title>
+    <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="src/assets/logo.png" alt="AgroVision" class="logo-img">
+                <span>AgroVision</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="monitoramento.html" class="nav-link active">Monitoramento</a>
+                <a href="alertas.html" class="nav-link">Alertas</a>
+                <a href="faq.html" class="nav-link">FAQ</a>
+                <a href="contato.html" class="nav-link">Contato</a>
+                <a href="integrantes.html" class="nav-link">Equipe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main style="padding: 40px 5%; max-width: 1200px; margin: 0 auto;">
+        <h1 style="color: #2E7D32; margin-bottom: 10px;">Painel de Monitoramento</h1>
+        <p style="color: #666; margin-bottom: 30px;">Análise de índices de vegetação (NDVI) capturados em tempo real.</p>
+
+        <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 40px;">
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 5px solid #2E7D32;">
+                <h4 style="color: #666; margin-bottom: 5px;">Área Total Analisada</h4>
+                <p style="font-size: 1.8rem; font-weight: bold; color: #333;">1.420 Hectares</p>
+            </div>
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 5px solid #0288D1;">
+                <h4 style="color: #666; margin-bottom: 5px;">Umidade Média do Solo</h4>
+                <p style="font-size: 1.8rem; font-weight: bold; color: #333;">42.5%</p>
+            </div>
+            <div style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-left: 5px solid #EF6C00;">
+                <h4 style="color: #666; margin-bottom: 5px;">Índice NDVI Geral</h4>
+                <p style="font-size: 1.8rem; font-weight: bold; color: #333;">0.78 (Bom)</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
